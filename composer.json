@@ -10,9 +10,14 @@
         "symfony/lts": "^4@dev",
         "symfony/maker-bundle": "^1.1",
         "symfony/phpunit-bridge": "^4.0",
+        "symfony/property-access": "^4.0",
+        "symfony/property-info": "^4.0",
+        "symfony/serializer": "^4.0",
         "symfony/yaml": "^4.0"
     },
     "require-dev": {
+        "phpstan/phpstan": "^0.11.12",
+        "squizlabs/php_codesniffer": "*",
         "symfony/dotenv": "^4.0"
     },
     "config": {
