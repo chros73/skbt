@@ -5,6 +5,7 @@ namespace App\Command;
 use App\Service\Converter\MetricJsonToArrayService;
 use App\Service\Hydrator\MetricHydratorService;
 use App\Service\Reader\FileReaderService;
+use App\Service\Statistic\CalculateMetricStatisticService;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
@@ -47,5 +48,9 @@ class AppAnalyseMetricsCommand extends Command
         $metricCollection = $metricHydratorService->getMetrics(
             $metricJsonToArrayService->getMetrics($readerService->read())
         );
+
+        // Calculate statistics for reporting
+        $calculateMetricStatisticService = new CalculateMetricStatisticService();
+        $statistics = $calculateMetricStatisticService->calculate($metricCollection);
     }
 }
