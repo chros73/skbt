@@ -2,6 +2,9 @@
 
 namespace App\Command;
 
+use App\Service\Converter\MetricJsonToArrayService;
+use App\Service\Hydrator\MetricHydratorService;
+use App\Service\Reader\FileReaderService;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
@@ -36,6 +39,13 @@ class AppAnalyseMetricsCommand extends Command
      */
     protected function execute(InputInterface $input, OutputInterface $output): void
     {
-        // Your business logic goes here.
+        // Read input file, convert JSON to array, then get all the metric data
+        $readerService = new FileReaderService($input);
+        $metricJsonToArrayService = new MetricJsonToArrayService();
+        $metricHydratorService = new MetricHydratorService();
+
+        $metricCollection = $metricHydratorService->getMetrics(
+            $metricJsonToArrayService->getMetrics($readerService->read())
+        );
     }
 }
