@@ -1,0 +1,58 @@
+{
+  "code": "OK",
+  "message": "Request successful",
+  "data": [
+    {
+      "metricData": [
+        {
+          "metricValue": 12693166.98,
+          "dtime": "2018-01-29"
+        },
+        {
+          "metricValue": 12668239.57,
+          "dtime": "2018-01-30"
+        },
+        {
+          "metricValue": 723772.1,
+          "dtime": "2018-01-31"
+        },
+        {
+          "metricValue": 12771101.69,
+          "dtime": "2018-02-01"
+        },
+        {
+          "metricValue": 12662092.12,
+          "dtime": "2018-02-02"
+        },
+        {
+          "metricValue": 12737616.12,
+          "dtime": "2018-02-03"
+        },
+        {
+          "metricValue": 655951.55,
+          "dtime": "2018-02-04"
+        },
+        {
+          "metricValue": 691421.95,
+          "dtime": "2018-02-05"
+        },
+        {
+          "metricValue": 12741567.9,
+          "dtime": "2018-02-06"
+        },
+        {
+          "metricValue": 12846544.45,
+          "dtime": "2018-02-07"
+        },
+        {
+          "metricValue": 12916041.52,
+          "dtime": "2018-02-08"
+        },
+        {
+          "metricValue": 840269.68,
+          "dtime": "2018-02-09"
+        }
+      ]
+    }
+  ]
+}

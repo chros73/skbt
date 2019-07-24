@@ -42,6 +42,18 @@ class AppAnalyseMetricsCommandTest extends KernelTestCase
             // Output
             __DIR__ . '/../../../resources/fixtures/2.output',
         ];
+
+        /**
+         * The third test case is more pattern detection, working
+         * out when something out of the ordinary is happening.
+         */
+        yield [
+            // Filename
+            __DIR__ . '/../../../resources/fixtures/3.json',
+            
+            // Output
+            __DIR__ . '/../../../resources/fixtures/3.output',
+        ];
     }
 
     /**

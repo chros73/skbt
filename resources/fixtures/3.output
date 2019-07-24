@@ -1,0 +1,24 @@
+SamKnows Metric Analyser v1.0.0
+===============================
+
+Period checked:
+
+    From: 2018-01-29
+    To:   2018-02-09
+
+Statistics:
+
+    Unit: Megabits per second
+
+    Average: 69.97
+    Min: 5.25
+    Max: 103.33
+    Median: 101.45
+
+Investigate:
+
+    * The date 2018-01-31 was under-performing.
+    * The period between 2018-02-04 and 2018-02-05
+      was under-performing.
+    * The date 2018-02-09 was under-performing.
+
